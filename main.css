@@ -94,27 +94,65 @@ label {
     background-image: linear-gradient(to right, #90E0EF, #CAF0F8);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) {
     body {
-        font-size: 0.7rem;
         box-sizing: border-box;
-
-    }
-
-    form {
-        width: 20rem;
-
-    }
-}
-
-@media (max-width:600px) {
-    body {
-        font-size: 1rem;
-        box-sizing: border-box;
+        max-width: 480px;
+        align-items: center;
         justify-content: center;
     }
 
+    .header {
+        width: 15rem;
+
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
     form {
+        width: 9rem;
+        padding: 2rem;
+        font-size: 1rem;
+        align-self: center;
+        margin: auto;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:480px) {
+    body {
+        box-sizing: border-box;
+        max-width: 720px;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .header {
         width: 20rem;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    form {
+        width: 15rem;
+        padding: 2rem;
+        font-size: 1rem;
+        align-self: center;
+        margin: auto;
+    }
+
+    label {
+        font-size: 1rem;
     }
 }
